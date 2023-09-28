@@ -4,9 +4,6 @@ from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage
 
-from dotenv import find_dotenv, load_dotenv
-load_dotenv(find_dotenv())
-
 chat_model = ChatOpenAI(temperature=0.8, model_name="gpt-3.5-turbo", verbose=True)
 
 template = """
